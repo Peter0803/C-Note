@@ -38,8 +38,7 @@ int main(){
     //String
     std::string desert = "ice cream";
     std::string pharse = "My name is Peter.";
-
-    // std::cout << "I like " + desert << " because it is delicious." << std::endl;
+    std::cout << "I like " + desert << " because it is delicious." << std::endl;
 
     //constant variable which is read-only
     const int YES = 0;
