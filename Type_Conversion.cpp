@@ -7,14 +7,16 @@ int main()
     //  Implicity
     int n = 1.4;
     double l = 2;
+    
     /*  Converse integer or a double (it will be conversed into integer) into a char, 
         it will be conversed into the abbreviation referring to ASCII. */
-    char p = 1;
-    char e = 1.2;
-
+    char p = 100;
+    char e = 100.2;
+    
     cout << n << endl;
     cout << l << endl;
     cout << p << endl;
+    cout << e << endl;
 
     //  Explicity : (data type)
     double s = (int) 3.14;
