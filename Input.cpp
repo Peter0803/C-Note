@@ -2,27 +2,30 @@
 
 int main()
 {
+    std::string food;
+    std::string country;
     std::string name;
-    int age;
-    double weight;
-    std::string occupation;
+    int number;
 
-    std::cout << "What's your name? ";
+    //std::cin  get the user input
+    std::cout << "What is your name? ";
     std::cin >> name;
+    
+    //std::getline(std::cin, variable)  the input can contain spaces
+    std::cout << "Which country do you want to go to? ";
+    std::getline(std::cin, country);
 
-    std::cout << "How old are you? ";
-    std::cin >> age;
+    std::cout << "How many students in the classroom? ";
+    std::cin >> number;
+    
+    //std::getline(std::cin >> std::ws, variable) the input will not be "\n" when the previous input is integer or double
+    std::cout << "What is favorite food? ";
+    std::getline(std::cin >> std::ws, food);
 
-    std::cout << "What is your weight? ";
-    std::cin >> weight;
-
-    std::cout << "What do you want to do in the future? ";
-    std::getline(std::cin >> std::ws, occupation);
-
-    std::cout << "Hello, " << name << "! " << "Nice to meet you." << std::endl;
-    std::cout << "You are " << age << " years old." << std::endl;
-    std::cout << "Your weight is " << weight << " kg." << std::endl;
-    std::cout << "You want to be a/an " << occupation << "." << std::endl;
+    std::cout << "My name is " << name << "." << std::endl;
+    std::cout << "My favorite food is " << food << "." << std::endl;
+    std::cout << "I want to go to " << country << "." << std::endl;
+    std::cout << "There are " << number << " students in the classroom." << std::endl;
 
     return 0;
 }
