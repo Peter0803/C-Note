@@ -19,7 +19,7 @@ int main()
     std::cin >> number;
     
     //std::getline(std::cin >> std::ws, variable) the input will not be "\n" when the previous input is integer or double
-    std::cout << "What is favorite food? ";
+    std::cout << "What is your favorite food? ";
     std::getline(std::cin >> std::ws, food);
 
     std::cout << "My name is " << name << "." << std::endl;
